@@ -1,0 +1,50 @@
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTUxNjIzOTAyMiwiYWRtaW4iOnRydWV9.RhRifFdSsBSrSf8sRbF6qfDjbLzpu3b506K8uY2vIXI",
+  "custom_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMTIzIiwibmFtZSI6IlRlc3QgVXNlciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTUxNjIzOTAyMn0.MOM-IsiSHfL-BoXURyxs4loIJa-dEapXX2bpbX6Gd1U",
+  "decoded": {
+    "sub": "1234567890",
+    "name": "Test User",
+    "iat": 1516239022,
+    "admin": true
+  },
+  "parts": {
+    "header": {
+      "alg": "HS256",
+      "typ": "JWT"
+    },
+    "payload": {
+      "sub": "1234567890",
+      "name": "Test User",
+      "iat": 1516239022,
+      "admin": true
+    },
+    "signature": "RhRifFdSsBSrSf8sRbF6qfDjbLzpu3b506K8uY2vIXI"
+  },
+  "analysis": {
+    "header": {
+      "alg": "HS256",
+      "typ": "JWT"
+    },
+    "payload": {
+      "sub": "1234567890",
+      "name": "Test User",
+      "iat": 1516239022,
+      "admin": true
+    },
+    "signature": "RhRifFdSsBSrSf8sRbF6qfDjbLzpu3b506K8uY2vIXI",
+    "analysis": {
+      "expired": false,
+      "time_to_expiration": 0,
+      "algorithm": "HS256",
+      "is_admin": true
+    }
+  },
+  "tools": {
+    "jwt_tool": true,
+    "jwtXploiter": false,
+    "jwt-hack": false,
+    "jwt-cracker": true,
+    "jwtcat": true,
+    "c-jwt-cracker": false
+  }
+}

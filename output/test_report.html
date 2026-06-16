@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EVIL-JWT-FORCE Relatório de Segurança</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #d9534f; }
+        h2 { color: #5bc0de; margin-top: 30px; }
+        pre { background-color: #f5f5f5; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+        th { background-color: #5bc0de; color: white; }
+        th, td { padding: 8px; text-align: left; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .footer { margin-top: 30px; font-size: 0.8em; color: #777; }
+        .timestamp { text-align: right; }
+    </style>
+</head>
+<body>
+    <h1>EVIL-JWT-FORCE Relatório de Segurança</h1>
+    <p class="timestamp">Gerado em: 2025-06-06 19:08:17</p>
+    <hr>
+    <div>
+        <h2>Informações Gerais</h2>
+<table border='1' cellpadding='5' cellspacing='0'><tr><th>Item</th><th>Valor</th></tr><tr><td>timestamp</td><td>2025-06-06T19:08:17.221292</td></tr><tr><td>target</td><td>test.example.com</td></tr><tr><td>token</td><td>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3QgVXNlciIsImFkbWluIjp0cnVlfQ.BeHzSOVmjvh_Kmt5WcW5UqhAJCUKJpZhDRzzkkW-rwE</td></tr></table><h2>Análise do Token</h2>
+<pre>{
+  "algorithm": "HS256",
+  "token_parts": {
+    "header": {
+      "alg": "HS256",
+      "typ": "JWT"
+    },
+    "payload": {
+      "sub": "1234567890",
+      "name": "Test User",
+      "admin": true
+    }
+  },
+  "issues": [
+    "No expiration time (exp) claim present",
+    "Token uses weak algorithm (HS256)",
+    "Admin privileges detected in token"
+  ]
+}</pre><h2>Vulnerabilidades Encontradas</h2>
+<ul><li><strong>Missing Expiration:</strong> The token does not have an expiration time, making it valid indefinitely</li><li><strong>Weak Algorithm:</strong> The token uses HS256 which can be vulnerable to brute force attacks if the secret is weak</li><li><strong>Privilege Escalation:</strong> The token contains admin privileges which could be exploited if signature verification is bypassed</li></ul><h2>Resultados de Força Bruta</h2>
+<pre>{
+  "attempted": 100,
+  "success": true,
+  "found_key": "test_secret",
+  "time_taken": 2.34
+}</pre>
+    </div>
+    <hr>
+    <div class="footer">
+        <p>Gerado por EVIL-JWT-FORCE - Ferramenta de Análise e Exploração de JWT</p>
+    </div>
+</body>
+</html>

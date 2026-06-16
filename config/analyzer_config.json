@@ -1,0 +1,44 @@
+{
+  "response_patterns": {
+    "auth_success": "(authentication successful|login successful|auth[:\\s]+true|\\\"token\\\")",
+    "auth_failure": "(authentication failed|invalid credentials|incorrect password|auth[:\\s]+false)",
+    "jwt_token": "(jwt|token|access_token|id_token)[\\\"']?\\s*[:=]\\s*[\\\"']?([A-Za-z0-9_-]+\\.[A-Za-z0-9_-]+\\.[A-Za-z0-9_-]+)",
+    "error_message": "(error|exception|warning)[\\\"']?\\s*[:=]\\s*[\\\"']?([^\\\"'}\\]]+)",
+    "sql_error": "(SQL syntax|mysql_fetch|mysqli_|ODBC|ORA-\\d{5}|PostgreSQL|syntax error at|unclosed quotation mark)",
+    "server_info": "(apache|nginx|iis|tomcat|node\\.js|php|asp\\.net|ruby|python|django|flask|express)",
+    "csrf_token": "(csrf|xsrf)[_-]?token[\\\"']?\\s*[:=]\\s*[\\\"']?([A-Za-z0-9+/=_-]+)",
+    "api_version": "(api[_-]?version|version)[\\\"']?\\s*[:=]\\s*[\\\"']?([0-9\\.]+)"
+  },
+  "jwt_patterns": {
+    "weak_algorithm": {
+      "pattern": "\"alg\"\\s*:\\s*\"(none|HS256)\"",
+      "description": "Uses either 'none' algorithm or HS256 which may be vulnerable to brute force"
+    },
+    "missing_exp": {
+      "pattern": "(?!\"exp\")",
+      "description": "JWT does not contain expiration claim"
+    },
+    "sensitive_data": {
+      "pattern": "\"(password|secret|key|credential)\"\\s*:",
+      "description": "JWT contains sensitive data in payload"
+    },
+    "admin_role": {
+      "pattern": "\"(role|admin|isAdmin|is_admin)\"\\s*:\\s*(\"admin\"|true)",
+      "description": "JWT contains admin role indicator"
+    }
+  },
+  "response_flags": {
+    "has_auth_mechanism": false,
+    "uses_jwt": false,
+    "has_csrf": false,
+    "has_api": false,
+    "shows_errors": false,
+    "leaks_server_info": false
+  },
+  "signature_weight": {
+    "headers": 0.4,
+    "response_format": 0.3,
+    "error_format": 0.2,
+    "auth_method": 0.1
+  }
+}

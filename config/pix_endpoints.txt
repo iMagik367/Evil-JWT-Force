@@ -1,0 +1,5 @@
+/pix/confirm
+/payment/webhook
+/api/payment/confirm
+/notify/payment
+/pix/callback 

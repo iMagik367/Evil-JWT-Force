@@ -1,0 +1,46 @@
+{
+  "info": {
+    "timestamp": "2025-06-06T19:08:17.221292",
+    "target": "test.example.com",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3QgVXNlciIsImFkbWluIjp0cnVlfQ.BeHzSOVmjvh_Kmt5WcW5UqhAJCUKJpZhDRzzkkW-rwE"
+  },
+  "analysis": {
+    "algorithm": "HS256",
+    "token_parts": {
+      "header": {
+        "alg": "HS256",
+        "typ": "JWT"
+      },
+      "payload": {
+        "sub": "1234567890",
+        "name": "Test User",
+        "admin": true
+      }
+    },
+    "issues": [
+      "No expiration time (exp) claim present",
+      "Token uses weak algorithm (HS256)",
+      "Admin privileges detected in token"
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "name": "Missing Expiration",
+      "description": "The token does not have an expiration time, making it valid indefinitely"
+    },
+    {
+      "name": "Weak Algorithm",
+      "description": "The token uses HS256 which can be vulnerable to brute force attacks if the secret is weak"
+    },
+    {
+      "name": "Privilege Escalation",
+      "description": "The token contains admin privileges which could be exploited if signature verification is bypassed"
+    }
+  ],
+  "bruteforce_results": {
+    "attempted": 100,
+    "success": true,
+    "found_key": "test_secret",
+    "time_taken": 2.34
+  }
+}

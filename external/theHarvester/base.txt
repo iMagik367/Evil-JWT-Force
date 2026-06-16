@@ -1,0 +1,6 @@
+aiomultiprocess
+netaddr
+ujson
+requests
+playwright
+PyYAML

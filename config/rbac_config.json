@@ -1,0 +1,85 @@
+{
+    "permissions": [
+        {
+            "name": "read:all",
+            "description": "Permissão para ler todos os recursos",
+            "resource": "*",
+            "action": "read",
+            "is_active": true
+        },
+        {
+            "name": "write:all",
+            "description": "Permissão para escrever em todos os recursos",
+            "resource": "*",
+            "action": "write",
+            "is_active": true
+        },
+        {
+            "name": "execute:tests",
+            "description": "Permissão para executar testes de segurança",
+            "resource": "tests",
+            "action": "execute",
+            "is_active": true
+        },
+        {
+            "name": "manage:users",
+            "description": "Permissão para gerenciar usuários",
+            "resource": "users",
+            "action": "manage",
+            "is_active": true
+        },
+        {
+            "name": "manage:security",
+            "description": "Permissão para gerenciar configurações de segurança",
+            "resource": "security",
+            "action": "manage",
+            "is_active": true
+        },
+        {
+            "name": "read:reports",
+            "description": "Permissão para ler relatórios",
+            "resource": "reports",
+            "action": "read",
+            "is_active": true
+        },
+        {
+            "name": "write:reports",
+            "description": "Permissão para escrever relatórios",
+            "resource": "reports",
+            "action": "write",
+            "is_active": true
+        }
+    ],
+    "roles": [
+        {
+            "name": "admin",
+            "description": "Administrador do sistema",
+            "permissions": [
+                "read:all",
+                "write:all",
+                "execute:tests",
+                "manage:users",
+                "manage:security"
+            ],
+            "is_active": true
+        },
+        {
+            "name": "security_analyst",
+            "description": "Analista de segurança",
+            "permissions": [
+                "read:all",
+                "write:reports",
+                "execute:tests"
+            ],
+            "is_active": true
+        },
+        {
+            "name": "viewer",
+            "description": "Visualizador de relatórios",
+            "permissions": [
+                "read:reports"
+            ],
+            "is_active": true
+        }
+    ]
+} 

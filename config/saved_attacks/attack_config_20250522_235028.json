@@ -1,0 +1,9 @@
+{
+    "Tipo de Token": "JWT",
+    "Token/Hash": "",
+    "Wordlist": "",
+    "Método de Ataque": "Força Bruta",
+    "Threads": "",
+    "Timeout por Tentativa": "",
+    "Alvo de Ataque": "Token"
+}

@@ -1,0 +1,8 @@
+{
+  "success": false,
+  "error": {
+    "code": 105,
+    "type": "function_access_restricted",
+    "info": "Access Restricted - Your current Subscription Plan does not support this API Function."
+  }
+}

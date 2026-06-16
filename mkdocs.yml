@@ -1,0 +1,109 @@
+site_name: Evil Force JWT
+site_description: Sistema de Segurança com IA
+site_author: Your Name
+repo_url: https://github.com/seu-usuario/evil-force-jwt
+repo_name: evil-force-jwt
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: datetime
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          selection:
+            docstring_style: google
+            docstring_options:
+              trim_doctest_flags: true
+              ignore_init_summary: true
+          rendering:
+            show_source: true
+            show_root_heading: true
+            show_category_heading: true
+            show_if_no_docstring: true
+            show_signature_annotations: true
+            show_signature_return_annotation: true
+            show_bases: true
+            heading_level: 2
+            docstring_style: google
+            docstring_options:
+              trim_doctest_flags: true
+              ignore_init_summary: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: installation.md
+    - Configuration: configuration.md
+    - Quick Start: quickstart.md
+  - User Guide:
+    - Authentication: user-guide/authentication.md
+    - Security Analysis: user-guide/security-analysis.md
+    - AI Integration: user-guide/ai-integration.md
+    - RBAC: user-guide/rbac.md
+  - API Reference:
+    - Overview: api/overview.md
+    - Authentication: api/authentication.md
+    - Security: api/security.md
+    - AI: api/ai.md
+    - RBAC: api/rbac.md
+  - Development:
+    - Contributing: development/contributing.md
+    - Code Style: development/code-style.md
+    - Testing: development/testing.md
+    - Deployment: development/deployment.md
+  - Architecture:
+    - Overview: architecture/overview.md
+    - Components: architecture/components.md
+    - Security: architecture/security.md
+    - Scalability: architecture/scalability.md
+  - Troubleshooting:
+    - Common Issues: troubleshooting/common-issues.md
+    - FAQ: troubleshooting/faq.md
+    - Support: troubleshooting/support.md 

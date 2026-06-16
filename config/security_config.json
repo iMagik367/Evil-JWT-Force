@@ -1,0 +1,14 @@
+{
+    "rate_limits": {
+        "requests_per_minute": 60,
+        "requests_per_hour": 1000,
+        "requests_per_day": 10000,
+        "cooldown_period": 60
+    },
+    "security": {
+        "max_payload_size": 1048576,
+        "allowed_origins": ["*"],
+        "require_authentication": true,
+        "log_level": "INFO"
+    }
+} 

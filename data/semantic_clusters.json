@@ -1,0 +1,69 @@
+{
+  "authentication": [
+    "auth",
+    "login",
+    "access",
+    "token",
+    "credential",
+    "session",
+    "identity",
+    "account",
+    "user",
+    "password",
+    "secret"
+  ],
+  "security": [
+    "secure",
+    "protect",
+    "encrypt",
+    "hash",
+    "sign",
+    "verify",
+    "validate",
+    "check",
+    "guard",
+    "shield",
+    "firewall"
+  ],
+  "web": [
+    "web",
+    "http",
+    "https",
+    "site",
+    "portal",
+    "app",
+    "application",
+    "api",
+    "service",
+    "endpoint",
+    "resource",
+    "rest"
+  ],
+  "company": [
+    "corp",
+    "inc",
+    "company",
+    "enterprise",
+    "organization",
+    "business",
+    "firm",
+    "group",
+    "agency",
+    "association",
+    "partner"
+  ],
+  "infrastructure": [
+    "server",
+    "cloud",
+    "aws",
+    "azure",
+    "gcp",
+    "host",
+    "container",
+    "docker",
+    "kubernetes",
+    "cluster",
+    "node",
+    "instance"
+  ]
+}

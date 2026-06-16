@@ -1,0 +1,16 @@
+{
+  "mutation_success_rates": {
+    "alg_none": 0.5,
+    "alg_manipulation": 0.4,
+    "signature_bypass": 0.3,
+    "header_injection": 0.2,
+    "payload_injection": 0.4,
+    "kid_manipulation": 0.3,
+    "claim_deletion": 0.3,
+    "claim_addition": 0.4,
+    "timestamp_manipulation": 0.5
+  },
+  "target_vulnerabilities": {},
+  "successful_mutations": {},
+  "last_updated": "2025-06-06T19:51:45.955755"
+}

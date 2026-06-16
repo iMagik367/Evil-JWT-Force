@@ -1,0 +1,75 @@
+# Incluir arquivos principais de documentação e configuração
+include README.md
+include LICENSE
+include requirements.txt
+include setup.py
+
+# Incluir scripts de instalação e execução
+include install.sh
+include install_deps.py
+include package.sh
+include EVIL_JWT_FORCE.bat
+include run_theHarvester.bat
+include dynamic_balance_sql.py
+include payloads.py
+include realtime_capture.py
+include vpn_ip_mask.py
+include wordlist_final.txt
+
+# Incluir arquivos do desktop e instalador
+include eviljwtforce.desktop
+include installer_script.iss
+
+# Incluir arquivos do diretório config
+recursive-include config *.py *.txt *.json *.yaml
+
+# Incluir arquivos do diretório core
+recursive-include core *.py
+
+# Incluir arquivos do diretório modules
+recursive-include modules *.py
+
+# Incluir arquivos do diretório output
+recursive-include output *.py *.txt *.json
+
+# Incluir arquivos do diretório logs
+recursive-include logs *.py *.txt
+
+# Incluir arquivos do diretório reports
+recursive-include reports *.py *.txt *.html
+
+# Incluir arquivos do diretório scripts
+recursive-include scripts *.py *.sh
+
+# Incluir arquivos do diretório gui e assets
+recursive-include gui *.py *.ico *.png
+recursive-include gui/assets *.ico *.png
+
+# Incluir arquivos do diretório utils e subdiretórios
+recursive-include utils *.py *.txt *.json
+recursive-include utils/network *.py
+
+# Incluir arquivos do diretório testes
+recursive-include testes *.py
+
+# Incluir arquivos do diretório exports
+recursive-include exports *
+
+# Incluir arquivos do diretório external (exemplo: theHarvester)
+recursive-include external *.py *.md *.txt *.toml *.yml *.png *.webp
+recursive-include external/theHarvester *
+
+# Incluir arquivos ocultos e de configuração do VSCode
+include .gitignore
+recursive-include .vscode *.json
+
+# Incluir arquivos adicionais que possam ser relevantes
+graft output/data
+graft output/data/wordlist
+
+# Excluir arquivos desnecessários (opcional, ajuste conforme necessidade)
+prune __pycache__
+prune *.pyc
+prune *.pyo
+
+# Fim do MANIFEST.in

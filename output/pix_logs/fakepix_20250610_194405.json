@@ -1,0 +1,13 @@
+{
+  "endpoint": "/payment/webhook",
+  "payload": {
+    "jwt": "12",
+    "user_id": "fromhell",
+    "amount": "50.00",
+    "status": "paid"
+  },
+  "status_code": null,
+  "headers": {},
+  "body": "",
+  "timestamp": "20250610_194405"
+}

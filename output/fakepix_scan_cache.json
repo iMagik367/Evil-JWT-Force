@@ -1,0 +1,10 @@
+{
+  "pix_txids": [
+    "TX1234567890",
+    "TXID_MOCKED"
+  ],
+  "webhook_candidates": [
+    "/webhook/pix",
+    "/pix/confirm"
+  ]
+}

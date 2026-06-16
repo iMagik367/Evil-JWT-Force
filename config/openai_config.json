@@ -1,0 +1,22 @@
+{
+    "model": "gpt-4",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "system_prompts": {
+        "security_analyst": "Você é um especialista em segurança cibernética.",
+        "report_writer": "Você é um especialista em relatórios de segurança."
+    },
+    "analysis_config": {
+        "include_vulnerabilities": true,
+        "include_mitigations": true,
+        "include_risk_level": true,
+        "include_next_steps": true
+    },
+    "report_config": {
+        "include_executive_summary": true,
+        "include_vulnerabilities": true,
+        "include_recommendations": true,
+        "include_risk_level": true,
+        "include_next_steps": true
+    }
+} 

@@ -1,0 +1,23 @@
+{
+  "endpoints": [
+    "/api/pay",
+    "/webhook/pix",
+    "/api/saldo",
+    "/pix/confirm"
+  ],
+  "headers": {},
+  "sqli_params": [
+    "user_id",
+    "balance",
+    "amount"
+  ],
+  "jwt_test": {},
+  "pix_txids": [
+    "TX1234567890",
+    "TXID_MOCKED"
+  ],
+  "webhook_candidates": [
+    "/webhook/pix",
+    "/pix/confirm"
+  ]
+}

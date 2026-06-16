@@ -1,0 +1,15 @@
+{
+    "selected_ai": "OpenAI",
+    "openai_key": "",
+    "pentest_muse_key": "",
+    "librechat_endpoint": "",
+    "integration_api": "Void Sync API",
+    "void_key": "",
+    "void_scraper": true,
+    "void_wordlist": true,
+    "ipstack_key": "",
+    "marketstack_key": "",
+    "weatherstack_key": "",
+    "fixer_key": "",
+    "numverify_key": ""
+}

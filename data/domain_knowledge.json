@@ -1,0 +1,87 @@
+{
+  "industries": {
+    "finance": [
+      "bank",
+      "money",
+      "credit",
+      "debit",
+      "payment",
+      "transaction",
+      "account"
+    ],
+    "healthcare": [
+      "health",
+      "medical",
+      "patient",
+      "doctor",
+      "hospital",
+      "clinic"
+    ],
+    "ecommerce": [
+      "shop",
+      "store",
+      "cart",
+      "order",
+      "product",
+      "item",
+      "purchase"
+    ],
+    "technology": [
+      "tech",
+      "software",
+      "hardware",
+      "code",
+      "program",
+      "system",
+      "data"
+    ]
+  },
+  "common_prefixes": [
+    "api",
+    "app",
+    "web",
+    "dev",
+    "prod",
+    "test",
+    "stage",
+    "uat",
+    "secure"
+  ],
+  "common_suffixes": [
+    "key",
+    "token",
+    "secret",
+    "auth",
+    "pass",
+    "pwd",
+    "cred"
+  ],
+  "frameworks": {
+    "jwt": [
+      "jwt",
+      "token",
+      "bearer",
+      "auth0",
+      "oauth",
+      "oidc"
+    ],
+    "spring": [
+      "spring",
+      "boot",
+      "security",
+      "java"
+    ],
+    "node": [
+      "node",
+      "express",
+      "passport",
+      "npm"
+    ],
+    "dotnet": [
+      "aspnet",
+      "core",
+      "identity",
+      "microsoft"
+    ]
+  }
+}

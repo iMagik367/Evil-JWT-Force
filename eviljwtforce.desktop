@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=EVIL_JWT_FORCE
+Comment=Ferramenta de JWT Force
+Exec=python3 /CAMINHO/COMPLETO/PARA/main.py
+Icon=/CAMINHO/COMPLETO/PARA/gui/assets/icon.png
+Terminal=true
+Categories=Utility;

@@ -1,0 +1,40 @@
+{
+    "users": [
+        {
+            "id": "admin",
+            "username": "admin",
+            "roles": ["admin", "security_analyst"],
+            "permissions": [
+                "read:all",
+                "write:all",
+                "delete:all",
+                "execute:all",
+                "manage:users",
+                "manage:security"
+            ],
+            "is_active": true
+        },
+        {
+            "id": "analyst",
+            "username": "analyst",
+            "roles": ["security_analyst"],
+            "permissions": [
+                "read:all",
+                "write:reports",
+                "execute:tests",
+                "manage:reports"
+            ],
+            "is_active": true
+        },
+        {
+            "id": "viewer",
+            "username": "viewer",
+            "roles": ["viewer"],
+            "permissions": [
+                "read:reports",
+                "read:logs"
+            ],
+            "is_active": true
+        }
+    ]
+} 

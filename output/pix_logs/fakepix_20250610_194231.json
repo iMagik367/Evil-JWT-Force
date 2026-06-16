@@ -1,0 +1,13 @@
+{
+  "endpoint": "/notify/payment",
+  "payload": {
+    "jwt": "+5545991285698",
+    "user_id": "yamiryuu",
+    "amount": "50.00",
+    "status": "paid"
+  },
+  "status_code": null,
+  "headers": {},
+  "body": "",
+  "timestamp": "20250610_194231"
+}

@@ -1,0 +1,30 @@
+{
+  "base_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc0OTI0NzY5NywiZXhwIjoxNzQ5MjUxMjk3fQ._5Y1u7Fe2-9FD6n4eZrcycOIn2qCj0lx1EYfBf5Fxzk",
+  "mutated_tokens": [
+    {
+      "name": "alg=none attack",
+      "description": "JWT with algorithm set to 'none'",
+      "token": "eyJhbGciOiAibm9uZSIsICJ0eXAiOiAiSldUIn0.eyJzdWIiOiAiMTIzNDU2Nzg5MCIsICJuYW1lIjogIlRlc3QgVXNlciIsICJpYXQiOiAxNzQ5MjQ3Njk3LCAiZXhwIjogMTc0OTI1MTI5N30."
+    },
+    {
+      "name": "admin privilege escalation",
+      "description": "JWT with admin privileges and invalid signature",
+      "token": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAiMTIzNDU2Nzg5MCIsICJuYW1lIjogIlRlc3QgVXNlciIsICJpYXQiOiAxNzQ5MjQ3Njk3LCAiZXhwIjogMTc0OTI1MTI5NywgImFkbWluIjogdHJ1ZSwgInJvbGUiOiAiYWRtaW4ifQ.invalid-signature"
+    },
+    {
+      "name": "expired token",
+      "description": "JWT with an expired timestamp",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc0OTI0NzY5NywiZXhwIjoxNTE2MjM5MDIyfQ.2OyXyReOCvOhwL8AeIUVudYOWNxoFULZwv6aa-4I3Gk"
+    },
+    {
+      "name": "SQL injection",
+      "description": "JWT with SQL injection payload",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IicgT1IgMT0xIC0tIiwiaWF0IjoxNzQ5MjQ3Njk3LCJleHAiOjE3NDkyNTEyOTd9.ZDJVRGtSNPUVYyPPwYCzOPUPxkzACv_9FXv8jHY5eAs"
+    },
+    {
+      "name": "algorithm downgrade",
+      "description": "JWT with downgraded algorithm",
+      "token": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAiMTIzNDU2Nzg5MCIsICJuYW1lIjogIlRlc3QgVXNlciIsICJpYXQiOiAxNzQ5MjQ3Njk3LCAiZXhwIjogMTc0OTI1MTI5N30.invalid-signature"
+    }
+  ]
+}

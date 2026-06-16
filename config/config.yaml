@@ -1,0 +1,104 @@
+# Configuração principal do EVIL_JWT_FORCE (Kali Linux Edition)
+general:
+  timeout: 15
+  retries: 5
+  threads: 8
+  user_agent: "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0"
+  log_level: "INFO"
+  linux_only: true
+  color_output: true
+  save_session: true
+
+jwt:
+  algorithm: "HS256"
+  mode: "bruteforce"
+  wordlist_file: "output/wordlist.txt"
+  tested_file: "output/wordlist_tested.txt"
+  max_token_length: 4096
+  min_token_length: 128
+
+aes:
+  mode: "CBC"
+  key_length: 16
+  padding_schemes: ["PKCS7", "ISO10126", "ZeroPadding", "ANSIX923"]
+  iv_length: 16
+
+paths:
+  report_html: "reports/report.html"
+  intercepted_tokens: "output/intercepted_tokens.txt"
+  logs_dir: "logs/"
+  exports_dir: "exports/"
+
+proxy:
+  use_proxy: true
+  rotate_proxies: true
+  proxy_list: "config/proxies.txt"
+  proxy_type: "http"
+  max_proxy_failures: 3
+
+auto_discovery:
+  enabled: true
+  scan_depth: 3
+  timeout_per_request: 5
+  common_endpoints:
+    - "/api/auth"
+    - "/api/login"
+    - "/auth/token"
+    - "/oauth/token"
+    - "/api/v1/auth"
+    - "/api/v2/auth"
+    - "/auth/jwt"
+    - "/login"
+    - "/admin/login"
+    - "/user/login"
+  methods:
+    - "GET"
+    - "POST"
+  headers:
+    Content-Type: "application/json"
+    Accept: "application/json"
+  save_results: true
+  output_file: "output/discovered_endpoints.txt"
+
+target_url: "https://d333bet.com/"
+output_dir: "output"
+reports_dir: "reports"
+log_file: "output/evil_jwt_force.log"
+credentials_file: "config/credentials.txt"
+
+api_provider: "voidsync"
+voidsync:
+  access_key: ""
+  enable_scraper: true
+  enable_wordlist: true
+
+# Configuração do LibreChat custom endpoint (OpenAI-compatible)
+librechat:
+  endpoint: "https://api.openai.com"
+  api_key: ""
+  model: "gpt-3.5-turbo"
+
+external_apis:
+  ipstack_key: ""
+  marketstack_key: ""
+  weatherstack_key: ""
+  fixer_key: ""
+  numverify_key: ""
+  receitaws_key: ""
+  census_gov_key: ""
+  veriphone_key: ""
+  haveibeenpwned_key: ""
+  headers_template:
+    Content-Type: "application/json"
+    User-Agent: "Mozilla/5.0"
+    X-Custom-Header: "EVILJWT"
+  psp_spoof_settings:
+    enable_spoof_psp: true
+    default_delay_ms: 400
+    spoof_origin: "psp.bcb.gov.br"
+
+# PSP bypass settings
+psp_spoof_settings:
+  enable_spoof_psp: true
+  default_delay_ms: 400
+  spoof_origin: "psp.bcb.gov.br"

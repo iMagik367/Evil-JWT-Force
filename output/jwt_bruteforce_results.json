@@ -1,0 +1,9 @@
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc0OTI0NzY5NywiZXhwIjoxNzQ5MjUxMjk3fQ._5Y1u7Fe2-9FD6n4eZrcycOIn2qCj0lx1EYfBf5Fxzk",
+  "secret": "test_secret",
+  "wordlist_size": 21,
+  "attempts": 21,
+  "duration": 0.0004391670227050781,
+  "success": true,
+  "attempts_per_second": 47817.798045602605
+}

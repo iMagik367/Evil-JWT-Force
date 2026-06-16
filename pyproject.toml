@@ -1,0 +1,186 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+extend-exclude = '''
+# A regex preceded with ^/ will apply only to files and directories
+# in the root of the project.
+^/docs
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+line_length = 88
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_optional = true
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --cov=app --cov-report=term-missing"
+testpaths = [
+    "tests",
+]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.coverage.run]
+source = ["app"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "pass",
+    "raise ImportError",
+]
+
+[tool.bandit]
+exclude_dirs = ["tests", "docs"]
+skips = ["B101"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+select = ["E", "F", "B", "I", "N", "UP", "PL", "RUF"]
+ignore = ["E501"]
+
+[tool.ruff.isort]
+known-first-party = ["app"]
+
+[tool.ruff.mccabe]
+max-complexity = 10
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+"tests/*" = ["S101", "PLR2004"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.ruff.pycodestyle]
+max-doc-length = 88
+
+[tool.ruff.pyflakes]
+ignore = ["F401"]
+
+[tool.ruff.pylint]
+max-args = 5
+max-attributes = 7
+max-branches = 12
+max-locals = 15
+max-parents = 7
+max-public-methods = 20
+max-returns = 6
+max-statements = 50
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "single"
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.flake8-unused-arguments]
+ignore-variadic-names = true
+
+[tool.ruff.flake8-datetimez]
+no-naive-datetime = true
+
+[tool.ruff.flake8-debugger]
+debug-statements = ["breakpoint", "pdb.set_trace"]
+
+[tool.ruff.flake8-docstring-convention]
+convention = "google"
+
+[tool.ruff.flake8-errmsg]
+max-string-length = 0
+
+[tool.ruff.flake8-implicit-str-concat]
+allow-multiline = true
+
+[tool.ruff.flake8-logging-format]
+extend-logging-args = true
+
+[tool.ruff.flake8-pytest-style]
+fixture-parentheses = true
+mark-parentheses = true
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "single"
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.flake8-unused-arguments]
+ignore-variadic-names = true
+
+[tool.ruff.flake8-variables-names]
+classmethod-decorators = ["classmethod", "validator"]
+
+[tool.ruff.flake8-datetimez]
+no-naive-datetime = true
+
+[tool.ruff.flake8-debugger]
+debug-statements = ["breakpoint", "pdb.set_trace"]
+
+[tool.ruff.flake8-docstring-convention]
+convention = "google"
+
+[tool.ruff.flake8-errmsg]
+max-string-length = 0
+
+[tool.ruff.flake8-implicit-str-concat]
+allow-multiline = true
+
+[tool.ruff.flake8-logging-format]
+extend-logging-args = true
+
+[tool.ruff.flake8-pytest-style]
+fixture-parentheses = true
+mark-parentheses = true
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "single"
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.flake8-unused-arguments]
+ignore-variadic-names = true
+
+[tool.ruff.flake8-variables-names]
+classmethod-decorators = ["classmethod", "validator"] 

@@ -1,0 +1,9 @@
+{
+    "Tipo de Token": "JWT",
+    "Token/Hash": "ajbksgjh~klj",
+    "Wordlist": "C:/Users/yami_/Documents/Tramoias/Virtual Linux/EVIL_JWT_FORCE/wordlist_final.txt",
+    "Método de Ataque": "Força Bruta",
+    "Threads": "",
+    "Timeout por Tentativa": "",
+    "Alvo de Ataque": "Token"
+}

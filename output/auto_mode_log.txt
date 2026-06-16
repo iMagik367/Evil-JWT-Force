@@ -1,0 +1,8 @@
+[2025-05-30 18:39:07] [INFO] [EVIL_JWT_FORCE.core] Importado: Authenticator de auth
+[2025-05-30 18:39:07] [INFO] [EVIL_JWT_FORCE.core] Importado: parse_args de cli
+[2025-05-30 18:39:07] [INFO] [EVIL_JWT_FORCE.core] Importado: generate_report de report
+[2025-05-30 18:39:07] [INFO] [EVIL_JWT_FORCE.core] Importado: JWTBruteforcer de bruteforce
+[2025-05-30 18:39:07] [INFO] [EVIL_JWT_FORCE.core] Importado: SQLInjector de sql_injector
+Executando modo automatico completo...
+
+Digite a URL alvo para o ataque (ex: https://example.com): 

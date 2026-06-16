@@ -1,0 +1,3 @@
+https://trusted-issuer.example.com
+https://api.bacen.gov.br
+https://meu-cassino.com

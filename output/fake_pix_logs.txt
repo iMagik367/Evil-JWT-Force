@@ -1,0 +1,39 @@
+[+] Injeção com bypass PSP: 405 | TXID: O3TL0O7B2XWH9DLD0TSKXCPDQ2EG8YCLXLA | Resposta: <html>
+<head><title>405 Method Not Allowed</title></head>
+<body>
+<h1>405 Method Not Allowed</h1>
+<ul>
+<li>Code: MethodNotAllowed</li>
+<li>Message: The specified method is not allowed against this resource.</li>
+<li>Method: POST</li>
+<li>ResourceType: OBJECT</li>
+<li>RequestId: 1DA836BVV3KGERHY</li>
+<li>HostId: 2XZv1BXsTyJI/tNEE2Lx0hKAsDmdRwz7n+oLG8u2K2qfbIo2NbaoURZLWw2n2JE/PFfJ/hHbxEg=</li>
+</ul>
+<hr/>
+</body>
+</html>
+
+[!] Erro no webhook spoof: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000291763A86E0>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro no webhook spoof: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000289DB0D0440>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro no webhook spoof: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000289DB0A6710>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[+] Injeção com bypass PSP: 0 | TXID: N22M5KHJ232U54OC7BSA16WBPTLTUEJB5KO | Resposta: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000289DB0A51D0>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro no webhook spoof: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001962CB10440>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro no webhook spoof: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001962CAE8F50>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[+] Injeção com bypass PSP: 0 | TXID: HRJ1MIO4GA6R3I3E4R3KAPZGI70HAP40HY5 | Resposta: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001962CAE9450>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao criar QR Pix: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021EFD72F230>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao enviar webhook manipulado: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E56D0>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao criar QR Pix: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E60D0>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao enviar webhook manipulado: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E6490>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao criar QR Pix: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E6850>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao enviar webhook manipulado: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E6C10>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao criar QR Pix: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E6FD0>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao enviar webhook manipulado: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E7390>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao criar QR Pix: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E7750>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao enviar webhook manipulado: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E7B10>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao criar QR Pix: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E7ED0>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao enviar webhook manipulado: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E816402D0>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao criar QR Pix: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E81640690>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao enviar webhook manipulado: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E7ED0>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao criar QR Pix: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E7C50>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
+[!] Erro ao enviar webhook manipulado: HTTPSConnectionPool(host='d333bet.com', port=443): Max retries exceeded with url: /home/mine (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021E815E7890>: Failed to resolve 'd333bet.com' ([Errno 11001] getaddrinfo failed)"))
